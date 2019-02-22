@@ -13,12 +13,12 @@ import java.awt.event.ActionListener;
 // Разсылать емейлы будет Listener
 public class ProdNotificationListener implements ApplicationListener<ContextRefreshedEvent> {
 
-    @Autowired
     // заинжекстим бин
+    @Autowired
     private NotificationProp notificationProp;
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
         // заинжектим мейл люде
-        notificationProp.getMails.forEach(System.out::println);
+        notificationProp.getMails().forEach(System.out::println);
     }
 }
