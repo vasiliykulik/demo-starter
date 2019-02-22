@@ -16,7 +16,7 @@ public class ProdNotificationListener implements ApplicationListener<ContextRefr
     private NotificationProp notificationProp;
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
-        // заинжектим мейл люде
         notificationProp.getMails().forEach(System.out::println);
+        // заинжектим мейл люде
     }
 }
