@@ -4,8 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 /**
  * Created by Vasiliy Kylik (Lightning) on 16.02.2019.
@@ -13,7 +11,7 @@ import java.awt.event.ActionListener;
 // Разсылать емейлы будет Listener
 public class ProdNotificationListener implements ApplicationListener<ContextRefreshedEvent> {
 
-    // заинжекстим бин
+    // заинжекстим обычный бин
     @Autowired
     private NotificationProp notificationProp;
     @Override
