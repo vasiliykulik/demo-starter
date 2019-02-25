@@ -21,5 +21,5 @@ import java.util.List;
 /* в dependency подтянем spring-boot-configuration-processor Эта штука просто на этапе maven install умеет генерить этот json файл из которого это все будет подтягиваться и это properties будут комплитится и не только в application.properties, но и вообще в других местах тоже*/
 public class NotificationProp {
     private List<String> mails; // нам нужна автоконфигурация, которая продекларирует листенера, которая по рефрешу контекста
-
+    private boolean notification;
 }
